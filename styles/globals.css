@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global resets */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark‑mode background */
+body {
+  @apply bg-black text-white;
+}
+
+/* Glass card base */
+.glass {
+  @apply bg-white/5 backdrop-blur-xs rounded-xl border border-white/10;
+}
+
+/* Neon glow on hover */
+.hover-glow:hover {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Simple matrix‑style background (optional) */
+#matrix-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.15;
+}
